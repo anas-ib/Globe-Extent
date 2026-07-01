@@ -1,0 +1,111 @@
+# PROJECT CONTEXT
+
+## Project
+
+Globe Extent LLP
+
+A premium multi-page corporate website representing Globe Extent LLP and its business divisions.
+
+The website is designed for lead generation, brand positioning, and client acquisition.
+
+Visitors should explore services and contact Globe Extent LLP for consultation through WhatsApp, phone, email, or a contact form.
+
+This is not an e-commerce platform or SaaS application.
+
+---
+
+# Website Structure
+
+The website follows a multi-page architecture.
+
+Pages:
+
+- Home
+- Business Solutions
+- Software Services
+- Products
+- Event Management
+- About Us
+- Contact Us
+
+Each business division has its own dedicated page.
+
+The Home page introduces the company and provides a preview of the four business divisions.
+
+It should never contain every service in detail.
+
+Every business page has its own hero section, content structure, imagery, and call-to-action.
+
+---
+
+# Development Workflow
+
+Build the website incrementally.
+
+Development order:
+
+1. Foundation
+2. Home
+3. Business Solutions
+4. Software Services
+5. Products
+6. Event Management
+7. About Us
+8. Contact Us
+9. Final Polish
+
+Work only on the requested page.
+
+Previously completed pages should remain visually consistent while allowing improvements that enhance the overall experience.
+
+---
+
+# Contact Flow
+
+Every service across the website leads to the same Contact page.
+
+The Contact page should dynamically update its Hero title, subtitle and selected service reference depending on the page from which the visitor arrives.
+
+The layout remains identical.
+
+---
+
+# Technology
+
+Choose the best technology stack to achieve the highest quality result.
+
+The stack may be upgraded whenever it improves the user experience, animations, maintainability or performance.
+
+Preferred stack:
+
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- React Router
+- Framer Motion
+- Lenis Smooth Scroll
+- Lucide React
+
+Additional libraries may be introduced if they significantly improve the experience.
+
+---
+
+# Overall Goal
+
+The website should feel like it was designed and developed by a premium digital agency.
+
+The experience should be modern, interactive, elegant and memorable while maintaining a professional corporate identity.
+
+Animations, transitions and micro-interactions are an essential part of the project and should never be simplified or removed merely to reduce implementation complexity.
+
+The final website should prioritize:
+
+- Premium design
+- Excellent responsiveness
+- Smooth interactions
+- Performance
+- Accessibility
+- Modern frontend practices
+- Reusable components
+- Clean architecture

@@ -1,0 +1,367 @@
+# DESIGN_SYSTEM.md
+
+# Globe Extent LLP - Design System
+
+## Design Vision
+
+Create a premium, modern, luxury corporate website that immediately builds trust and leaves a memorable first impression.
+
+The experience should feel polished, interactive and high-end while remaining clean, professional and easy to navigate.
+
+The website should communicate:
+
+- Premium
+- Luxury
+- Professional
+- Trustworthy
+- Global
+- Modern
+- Elegant
+- High-End
+
+The interface should never feel like a generic template or a static information website.
+
+---
+
+# Design Inspiration
+
+Reference:
+
+https://www.incorpx.io/
+
+Use the reference only for inspiration regarding interaction quality, visual hierarchy, premium layout, animation quality and user experience.
+
+Create a unique visual identity for Globe Extent LLP.
+
+---
+
+# Brand Identity
+
+Primary Color
+
+Dark Navy Blue
+
+Secondary Color
+
+Premium Gold
+
+Background
+
+White
+
+Accent
+
+Gold
+
+Text
+
+Dark Navy
+
+Use gradients only where they improve depth and elegance.
+
+Maintain a refined corporate color palette.
+
+---
+
+# Typography
+
+Use the official Globe Extent LLP font whenever available.
+
+Otherwise use a premium modern sans-serif font.
+
+Typography should be elegant, spacious and easy to read.
+
+Maintain strong visual hierarchy with generous spacing.
+
+---
+
+# Layout
+
+The website should feel open and premium.
+
+Use generous whitespace.
+
+Avoid visual clutter.
+
+Keep sections balanced and easy to scan.
+
+Every page should naturally flow:
+
+Hero
+
+↓
+
+Content
+
+↓
+
+Call To Action
+
+↓
+
+Footer
+
+---
+
+# Navbar
+
+Create a premium navigation experience.
+
+Transparent while the Hero section is visible.
+
+Smoothly transition into a dark navy glassmorphism navbar while scrolling.
+
+Features:
+
+- Sticky navigation
+- Glass blur
+- Thin gold accent line
+- Active page indicator
+- Animated underline
+- Smooth hover transitions
+- Premium CTA button
+- Elegant logo hover animation
+
+Desktop:
+
+Logo | Navigation | CTA
+
+Mobile:
+
+Animated slide-out menu with backdrop blur and smooth transitions.
+
+---
+
+# Hero
+
+Every page begins with a premium Hero section.
+
+The Home Hero should feel alive.
+
+Use an interactive animated background.
+
+Examples:
+
+- Cursor-following radial glow
+- Animated mesh gradient
+- Floating abstract particles
+- Soft moving lights
+- Mouse-responsive lighting
+- Click ripple effect
+
+Keep the interaction subtle and premium.
+
+Never distract from the content.
+
+---
+
+# Motion Design
+
+Animation is a core part of the Globe Extent experience.
+
+The website should never feel static.
+
+Every page should include smooth and refined motion.
+
+Use:
+
+- Smooth page transitions
+- Scroll-triggered animations
+- Staggered content reveals
+- Fade animations
+- Slide animations
+- Scale transitions
+- Animated section entrances
+- Navbar transitions
+- Image reveal animations
+- Hover transitions
+- Cursor interactions
+- Micro-interactions
+
+Animations should remain consistent across every page.
+
+Do not simplify or remove animations to reduce implementation complexity.
+
+The user experience should always prioritize a premium animated feel.
+
+---
+
+# Smooth Scrolling
+
+Scrolling should feel premium.
+
+Implement high-quality smooth scrolling.
+
+Content should naturally reveal while scrolling.
+
+Scrolling should feel fluid across the entire website.
+
+---
+
+# Page Transitions
+
+Moving between pages should feel seamless.
+
+Use premium transitions instead of instant page changes.
+
+Navigation should feel continuous.
+
+The website should behave like one connected experience.
+
+---
+
+# Hover Effects
+
+Buttons
+
+- Slight lift
+- Soft shadow
+- Gold highlight
+- Gentle scaling
+- Smooth easing
+
+Cards
+
+- Lift
+- Animated border
+- Premium shadow
+- Icon animation
+- CTA arrow animation
+
+Images
+
+- Slow zoom
+- Overlay transition
+- Depth effect
+
+Navigation
+
+- Animated underline
+- Smooth color transitions
+
+Logo
+
+- Subtle premium hover interaction
+
+Hover effects should communicate quality without becoming flashy.
+
+---
+
+# Visual Depth
+
+Create depth throughout the interface.
+
+Use:
+
+- Soft layered shadows
+- Glassmorphism
+- Elegant gradients
+- Floating cards
+- Subtle lighting
+- Layer separation
+
+Avoid flat sections wherever appropriate.
+
+---
+
+# Images
+
+Business Solutions
+
+Premium icons with supporting visuals.
+
+Software Services
+
+Modern technology illustrations and digital business graphics.
+
+Products
+
+Large premium product photography.
+
+Event Management
+
+Large immersive event photography.
+
+Maintain consistent image quality throughout the website.
+
+---
+
+# Components
+
+Use a single reusable design language.
+
+Shared components include:
+
+- Navbar
+- Footer
+- Hero
+- Buttons
+- Cards
+- Section headings
+- Testimonials
+- FAQ
+- CTA sections
+
+Maintain consistency throughout the website.
+
+---
+
+# Responsiveness
+
+Desktop-first.
+
+Fully responsive for:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+Maintain the same premium experience across all devices.
+
+---
+
+# Performance
+
+Use performant modern frontend techniques.
+
+Prefer GPU-accelerated animations.
+
+Optimize images.
+
+Maintain excellent loading performance while preserving animation quality.
+
+Use animation libraries whenever they improve the experience.
+
+Recommended:
+
+- Framer Motion
+- GSAP (where beneficial)
+- Lenis Smooth Scroll
+
+Do not avoid these libraries simply to keep the project simpler.
+
+The visual experience has higher priority than minimizing dependencies.
+
+---
+
+# Overall Experience
+
+The final website should feel like a premium digital agency portfolio combined with a luxury corporate consulting website.
+
+Visitors should immediately notice:
+
+- Premium navigation
+- Interactive Hero
+- Smooth scrolling
+- Elegant page transitions
+- High-quality animations
+- Premium hover effects
+- Beautiful imagery
+- Strong visual hierarchy
+- Modern interactions
+- Fluid user experience
+
+The website should feel alive without feeling overwhelming.
+
+Animations should support the brand, increase perceived quality and create a memorable browsing experience.

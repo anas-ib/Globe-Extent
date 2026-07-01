@@ -1,6 +1,6 @@
-# [Project name]
+# Globe Extent LLP
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A premium multi-page corporate website for Globe Extent LLP — a multi-service business consulting firm with four divisions: Business Solutions, Software Services, Products, and Event Management.
 
 ## Run & Operate
 
@@ -22,15 +22,24 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/globe-extent/src/pages/` — 7 page components (Home, BusinessSolutions, SoftwareServices, Products, EventManagement, About, Contact)
+- `artifacts/globe-extent/src/components/layout/` — Navbar, Footer
+- `artifacts/globe-extent/src/components/shared/` — PageHero, SectionHeading, ServiceCard, CTASection, AnimatedSection
+- `artifacts/globe-extent/src/hooks/` — useLenis, useScrollAnimation (with typed EASE tuple)
+- `attached_assets/generated_images/` — AI-generated hero and background images
+- `artifacts/globe-extent/src/index.css` — Brand CSS variables (navy, gold palette)
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- **Frontend-only**: No backend required — pure React SPA with React Router DOM and static content.
+- **React Router DOM** (not wouter) with `BrowserRouter` using `basename={import.meta.env.BASE_URL}` and `AnimatePresence` for page transitions.
+- **Lenis** smooth scroll integrated via `useLenis` hook with Framer Motion's `useAnimationFrame`.
+- **TypeScript fix**: `ease` in Framer Motion variants must be typed as `[number, number, number, number]` (4-tuple), not `number[]`, to satisfy the `Easing` type. Stored as a named constant.
+- **cloneElement pattern**: Icon ReactElements passed as props use `as React.ReactElement<any>` cast in cloneElement — acceptable tradeoff for component flexibility.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+7-page premium corporate website: Home (interactive animated hero + division preview), Business Solutions (tabbed/accordion service explorer), Software Services, Products, Event Management, About Us, and Contact Us (dynamic hero via `?service=` query params).
 
 ## User preferences
 

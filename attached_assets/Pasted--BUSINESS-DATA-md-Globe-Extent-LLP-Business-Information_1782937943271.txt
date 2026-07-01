@@ -1,0 +1,273 @@
+# BUSINESS_DATA.md
+
+# Globe Extent LLP - Business Information
+
+## Company Overview
+
+Globe Extent LLP is a multi-service business consulting company providing end-to-end solutions for entrepreneurs, startups, businesses, organizations and individuals.
+
+The website is organized into four independent business divisions:
+
+- Business Solutions
+- Software Services
+- Products
+- Event Management
+
+Each division has its own dedicated page.
+
+The website is designed to educate visitors, establish trust and encourage enquiries through consultation.
+
+---
+
+# Business Solutions
+
+## Business Setup
+
+- Private Limited Company Registration
+- Public Limited Company Registration
+- Limited Liability Partnership (LLP)
+- One Person Company (OPC)
+- Partnership Firm Registration
+- Sole Proprietorship Registration
+
+Excluded Services
+
+- Section 8 Company
+- Nidhi Company
+
+---
+
+## Tax Compliance
+
+- GST Registration
+- GST Return Filing
+- GST Amendment
+- GST Cancellation
+- Accounting
+- Bookkeeping
+- Payroll Services
+- Business Compliance
+
+---
+
+## Income Tax
+
+- Income Tax Return Filing
+- TDS Return Filing
+- Statutory Audit
+- Tax Planning
+- Income Tax Consultancy
+- Tax Notice Assistance
+
+---
+
+## Corporate Compliance
+
+- Annual ROC Compliance
+- Director Compliance
+- Company Filing
+- Regulatory Compliance
+- Corporate Advisory
+
+---
+
+## Finance Services
+
+- Business Loan
+- Housing Loan
+- Vehicle Loan
+- Loan Against Property
+
+---
+
+## License Registration
+
+- FSSAI Registration
+- MSME (Udyam) Registration
+- Import Export Code (IEC)
+- ISO Certification
+- Shop & Establishment Registration
+- Trade License
+- Professional Tax Registration
+- Government License Assistance
+
+---
+
+## Intellectual Property
+
+- Trademark Registration
+- Trademark Renewal
+- Trademark Objection
+- Trademark Assignment
+- Patent Filing
+- Copyright Registration
+- Design Registration
+- Intellectual Property Consultancy
+
+---
+
+## Export Services
+
+- DGFT Services
+- ICEGATE Services
+- Port Clearance
+- Customs Documentation
+- Import Documentation
+- Export Documentation
+- Export Consultancy
+- End-to-End Export Assistance
+
+---
+
+# Software Services
+
+Digital solutions for businesses.
+
+Services include:
+
+- Business Website Development
+- Corporate Website Development
+- E-Commerce Website Development
+- Mobile Application Development
+- Custom Business Software
+- Restaurant Management System
+- Search Engine Optimization (SEO)
+- Google Business Profile Setup
+- NFC / Tap-to-Connect Solutions
+- Website Maintenance & Technical Support
+
+---
+
+# Products
+
+The Products division showcases premium partner-backed commercial solutions.
+
+## Private Label Beverage Solutions
+
+Businesses can launch their own beverage brand while Globe Extent LLP manages the complete production process through trusted partners.
+
+Products include:
+
+- Energy Drinks
+- Soft Drinks
+- Cold Drinks
+- Coconut Water
+- Fruit Juices
+- Health Drinks
+- Custom Beverage Branding
+
+---
+
+## Automation & Security
+
+- Automation Gates
+- Sliding Gates
+- Swing Gates
+- Smart Gate Systems
+- Security Systems
+- Access Control Solutions
+
+---
+
+## Engineering Works
+
+Engineering solutions delivered through trusted partners.
+
+---
+
+## Construction Works
+
+Construction and infrastructure solutions delivered through partner organizations.
+
+---
+
+# Event Management
+
+Professional planning and execution services.
+
+## Wedding Events
+
+- Wedding Planning
+- Stage Decoration
+- Venue Decoration
+- Reception Setup
+
+---
+
+## Corporate Events
+
+- Conferences
+- Business Meetings
+- Award Functions
+- Company Celebrations
+
+---
+
+## Product Launches
+
+- Product Launch Events
+- Brand Promotion
+- Marketing Events
+
+---
+
+## Vehicle Launches
+
+- Car Launches
+- Bike Launches
+- Showroom Launches
+
+---
+
+## Stage & Decoration
+
+- Stage Design
+- Lighting
+- Theme Decoration
+- Event Setup
+
+---
+
+## Catering
+
+- Catering Services
+- Hospitality Management
+- Food Service Coordination
+
+---
+
+## Fresh Juice Counters
+
+- Fresh Juice Stalls
+- Beverage Counters
+- Event Refreshment Solutions
+
+---
+
+# Contact & Lead Generation
+
+The website encourages visitors to contact Globe Extent LLP rather than purchase services online.
+
+Every service should provide a clear call-to-action directing users to the shared Contact page.
+
+Recommended CTA labels:
+
+- Talk to an Expert
+- Book a Meeting
+- Request Consultation
+- Contact Our Team
+- Explore Service
+
+The Contact page dynamically updates its heading based on the selected service while maintaining the same layout.
+
+---
+
+# Content Style
+
+Keep content concise, professional and easy to understand.
+
+Focus on business value, trust and credibility.
+
+Avoid unnecessary technical language and long paragraphs.
+
+The website should position Globe Extent LLP as a reliable long-term business partner with expertise across consulting, technology, products and event management.

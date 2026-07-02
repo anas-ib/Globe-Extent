@@ -21,31 +21,27 @@ A premium, multi-page marketing website for **Globe Extent LLP**, a multi-servic
 | Animation | Framer Motion + Lenis smooth scroll |
 | Icons | Lucide React |
 | UI Primitives | shadcn/ui (Radix UI) |
-| Package Manager | pnpm (workspace monorepo) |
+| Package Manager | pnpm |
 
 ## Project Structure
 
 ```
 .
-├── artifacts/
-│   ├── globe-extent/          # Frontend React SPA (main website)
-│   │   ├── src/
-│   │   │   ├── pages/         # Home, BusinessSolutions, SoftwareServices,
-│   │   │   │                  # Products, EventManagement, About, Contact
-│   │   │   ├── components/
-│   │   │   │   ├── layout/    # Navbar, Footer
-│   │   │   │   ├── shared/    # PageHero, SectionHeading, CTASection, GlobeLogo…
-│   │   │   │   └── ui/        # shadcn/ui primitives (subset actually used)
-│   │   │   ├── hooks/         # useScrollAnimation, useLenis
-│   │   │   └── App.tsx        # Router, AnimatePresence, Lenis init
-│   │   └── public/            # favicon, robots.txt
-│   └── api-server/            # Lightweight Express API (health check + future routes)
-├── lib/
-│   └── api-zod/               # Zod schemas shared between API server and clients
-├── attached_assets/
-│   └── generated_images/      # AI-generated hero/background images
-└── scripts/
-    └── post-merge.sh          # Post-merge setup script (pnpm install)
+├── src/
+│   ├── pages/         # Home, BusinessSolutions, SoftwareServices,
+│   │                  # Products, EventManagement, About, Contact
+│   ├── components/
+│   │   ├── layout/    # Navbar, Footer
+│   │   ├── shared/    # PageHero, SectionHeading, CTASection, GlobeLogo…
+│   │   └── ui/        # shadcn/ui primitives (subset actually used)
+│   ├── hooks/         # useScrollAnimation, useLenis
+│   ├── lib/
+│   │   └── api-zod/   # Zod schemas shared between API server and clients
+│   └── App.tsx        # Router, AnimatePresence, Lenis init
+├── public/            # favicon, robots.txt
+│   └── attached_assets/ # AI-generated hero/background images
+├── server/            # Lightweight Express API (health check + future routes)
+└── package.json       # Consolidated package config
 ```
 
 ## Getting Started
@@ -61,11 +57,13 @@ pnpm install
 
 ### Run development server
 ```bash
-# Website (http://localhost:21160)
-pnpm --filter @workspace/globe-extent run dev
+# Website (http://localhost:3000)
+pnpm dev
 
-# API server (http://localhost:8080/api)
-pnpm --filter @workspace/api-server run dev
+# API server (if needed)
+cd server
+pnpm install
+pnpm dev
 ```
 
 ### Type checking
@@ -77,6 +75,8 @@ pnpm run typecheck
 ```bash
 pnpm run build
 ```
+
+The build output will be in the `dist` directory.
 
 ## Design System
 
@@ -98,14 +98,6 @@ pnpm run build
 | `/event-management` | Event Management |
 | `/about` | About Us |
 | `/contact` | Contact — Lead capture form |
-
-## Deployment
-
-The site is deployed via **Replit Autoscale**. The `globe-extent` artifact serves as a static SPA; the `api-server` artifact handles `/api` routes.
-
-- Production URL: `https://globe-extent--anazibrahim.replit.app`
-- Static files: `artifacts/globe-extent/dist/public/`
-- Health check: `GET /api/healthz`
 
 ## License
 

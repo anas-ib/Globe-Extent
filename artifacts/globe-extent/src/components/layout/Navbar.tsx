@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowRight } from 'lucide-react';
+import { BrandLockup } from '@/components/shared/BrandLockup';
 
 const NAV_LINKS = [
   { name: 'Home', path: '/' },
@@ -43,9 +44,7 @@ export function Navbar() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="relative z-50 group">
-              <span className="text-2xl font-serif font-bold text-white tracking-wider group-hover:text-accent transition-colors duration-300">
-                Globe Extent<span className="text-accent group-hover:text-white transition-colors duration-300">.</span>
-              </span>
+              <BrandLockup size="sm" className="group-hover:opacity-90 transition-opacity duration-300" />
             </Link>
 
             {/* Desktop Nav */}

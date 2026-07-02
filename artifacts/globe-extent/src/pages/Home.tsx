@@ -7,6 +7,7 @@ import { AnimatedSection } from '@/components/shared/AnimatedSection';
 import { SectionHeading } from '@/components/shared/SectionHeading';
 import { CTASection } from '@/components/shared/CTASection';
 import { GlobeLogo } from '@/components/shared/GlobeLogo';
+import { BrandLockup } from '@/components/shared/BrandLockup';
 
 import bgImage from '@assets/generated_images/home-hero-bg.jpg';
 import towerImage from '@assets/generated_images/corporate-tower.jpg';
@@ -69,15 +70,10 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex items-center justify-center gap-4 mb-8"
+            className="flex items-center justify-center gap-5 mb-8"
           >
             <GlobeLogo size={72} className="drop-shadow-[0_0_18px_rgba(201,168,76,0.5)]" />
-            <div className="text-left">
-              <p className="font-serif text-3xl md:text-4xl font-bold text-white leading-none tracking-wide">
-                Globe<span className="text-accent">Extent</span>
-              </p>
-              <p className="font-sans text-xs tracking-[0.3em] uppercase text-white/50 mt-1">LLP</p>
-            </div>
+            <BrandLockup size="lg" />
           </motion.div>
 
           <motion.div

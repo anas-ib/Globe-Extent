@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
+import { BrandLockup } from '@/components/shared/BrandLockup';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -15,9 +16,7 @@ export function Footer() {
           {/* Brand Col */}
           <div className="lg:col-span-4">
             <Link to="/" className="inline-block mb-6">
-              <span className="text-3xl font-serif font-bold text-white tracking-wider">
-                Globe Extent<span className="text-accent">.</span>
-              </span>
+              <BrandLockup size="md" />
             </Link>
             <p className="text-white/60 font-sans leading-relaxed mb-8 max-w-sm">
               A premium multi-service consulting company providing end-to-end solutions for entrepreneurs, startups, and global enterprises.

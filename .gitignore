@@ -1,17 +1,24 @@
-# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# compiled output
-dist
-tmp
-out-tsc
+# ── Build output ──────────────────────────────────────────────────────────────
+dist/
+tmp/
+out-tsc/
 *.tsbuildinfo
-.expo
-.expo-shared
+.expo/
+.expo-shared/
 
-# dependencies
-node_modules
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
 
-# IDEs and editors
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-error.log*
+testem.log
+/libpeerconnection.log
+
+# ── IDEs & editors ───────────────────────────────────────────────────────────
 /.idea
 .project
 .classpath
@@ -19,31 +26,29 @@ node_modules
 *.launch
 .settings/
 *.sublime-workspace
-
-# IDE - VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
-.DS_Store
-Thumbs.db
-
 .cursor/rules/nx-rules.mdc
 .github/instructions/nx.instructions.md
 
-# Replit
+# ── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.sass-cache/
+/connect.lock
+/coverage
+/typings
+
+# ── Replit platform (not project source) ─────────────────────────────────────
 .cache/
 .local/
+.agents/
+
+# ── Uploaded / temporary asset files ─────────────────────────────────────────
+# Raw uploads from Replit chat (design briefs, pasted docs, source images)
+attached_assets/Pasted--*.txt
+attached_assets/image_*.png
+attached_assets/image_*.jpg

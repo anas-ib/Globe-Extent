@@ -70,10 +70,14 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex items-center justify-center gap-5 mb-8"
+            className="flex items-center justify-center gap-4 md:gap-5 mb-8"
           >
-            <GlobeLogo size={72} className="drop-shadow-[0_0_18px_rgba(201,168,76,0.5)]" />
-            <BrandLockup size="lg" />
+            {/* Globe shrinks on mobile so the lockup fits on one row */}
+            <GlobeLogo size={52} className="md:hidden shrink-0 drop-shadow-[0_0_14px_rgba(201,168,76,0.5)]" />
+            <GlobeLogo size={72} className="hidden md:block shrink-0 drop-shadow-[0_0_18px_rgba(201,168,76,0.5)]" />
+            {/* md size on mobile, lg on md+ */}
+            <span className="md:hidden"><BrandLockup size="md" /></span>
+            <span className="hidden md:block"><BrandLockup size="lg" /></span>
           </motion.div>
 
           <motion.div

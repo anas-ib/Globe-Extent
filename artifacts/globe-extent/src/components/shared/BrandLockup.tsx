@@ -12,6 +12,11 @@ interface BrandLockupProps {
   color?: string;
   /** Gold accent colour for "Extent" */
   accentColor?: string;
+  /**
+   * Opacity for the "LLP" suffix (0–1). Defaults to 0.6.
+   * Separate from `color` so any valid CSS colour works.
+   */
+  llpOpacity?: number;
   className?: string;
 }
 
@@ -31,6 +36,7 @@ export function BrandLockup({
   size = 'md',
   color = '#FFFFFF',
   accentColor = '#C9A84C',
+  llpOpacity = 0.6,
   className = '',
 }: BrandLockupProps) {
   const configs = {
@@ -92,11 +98,12 @@ export function BrandLockup({
           fontSize: cfg.llpFontSize,
           fontWeight: 500,
           letterSpacing: '0.18em',
-          color: `${color}99`, // 60% opacity
+          color,                       // same colour token; opacity handles the dim
+          opacity: llpOpacity,
           textTransform: 'uppercase',
           lineHeight: 1,
           position: 'relative',
-          top: `-${cfg.llpOffset}`,   // pull up slightly for optical baseline alignment
+          top: `-${cfg.llpOffset}`,    // pull up slightly for optical baseline alignment
           whiteSpace: 'nowrap',
         }}
       >

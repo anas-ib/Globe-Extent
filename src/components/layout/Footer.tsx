@@ -24,8 +24,8 @@ export function Footer() {
             <div className="flex gap-4">
               <SocialLink href="#" icon={<Linkedin className="w-5 h-5" />} />
               <SocialLink href="#" icon={<Twitter className="w-5 h-5" />} />
-              <SocialLink href="#" icon={<Facebook className="w-5 h-5" />} />
-              <SocialLink href="#" icon={<Instagram className="w-5 h-5" />} />
+              <SocialLink href="https://facebook.com/globeextentllp" icon={<Facebook className="w-5 h-5" />} />
+              <SocialLink href="https://instagram.com/globeextentllp" icon={<Instagram className="w-5 h-5" />} />
             </div>
           </div>
 
@@ -57,15 +57,19 @@ export function Footer() {
             <ul className="space-y-6">
               <li className="flex items-start gap-4 text-white/60 group">
                 <MapPin className="w-5 h-5 text-accent shrink-0 mt-1" />
-                <span className="leading-relaxed">123 Corporate Tower, Financial District, Global City, 10001</span>
+                <span className="leading-relaxed">2nd Floor, Metro Tower, Kaikamba, Uppala - 671 322</span>
               </li>
-              <li className="flex items-center gap-4 text-white/60 group">
-                <Phone className="w-5 h-5 text-accent shrink-0" />
-                <a href="tel:+1234567890" className="hover:text-accent transition-colors">+1 (234) 567-890</a>
+              <li className="flex items-start gap-4 text-white/60 group">
+                <Phone className="w-5 h-5 text-accent shrink-0 mt-1" />
+                <div className="space-y-2">
+                  <a href="tel:+916360235580" className="hover:text-accent transition-colors block">+91 63602 35580</a>
+                  <a href="tel:+91994691979" className="hover:text-accent transition-colors block">+91 99469 1979</a>
+                  <a href="tel:+917829024003" className="hover:text-accent transition-colors block">+91 78290 24003</a>
+                </div>
               </li>
               <li className="flex items-center gap-4 text-white/60 group">
                 <Mail className="w-5 h-5 text-accent shrink-0" />
-                <a href="mailto:contact@globeextent.com" className="hover:text-accent transition-colors">contact@globeextent.com</a>
+                <a href="mailto:globeextent@gmail.com" className="hover:text-accent transition-colors">globeextent@gmail.com</a>
               </li>
             </ul>
           </div>

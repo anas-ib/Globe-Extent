@@ -20,6 +20,15 @@ const BREADCRUMBS = [
   { label: 'Contact Us', path: '/contact' }
 ];
 
+const OFFICE_PHONE = '+91 63602 35580';
+const OFFICE_PHONE_SECONDARY = '+91 99469 1979';
+const OFFICE_PHONE_THIRD = '+91 78290 24003';
+const OFFICE_EMAIL = 'globeextent@gmail.com';
+const EVENT_PHONE = '+91 82963 98650';
+const OFFICE_PHONE_DIAL = 'tel:+916360235580';
+const EVENT_PHONE_DIAL = 'tel:+918296398650';
+const WHATSAPP_PHONE = '916360235580';
+
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
   email: z.string().email('Please enter a valid email address.'),
@@ -32,6 +41,7 @@ export default function Contact() {
   const [searchParams] = useSearchParams();
   const requestedService = searchParams.get('service');
   const sourcePage = searchParams.get('from');
+  const isEventInquiry = sourcePage === 'Event Management';
   
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = React.useState(false);
@@ -58,16 +68,21 @@ export default function Contact() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-    // Simulate API call
+
+    const messageText = `Hello Globe Extent,\n\nName: ${values.name}\nEmail: ${values.email}\nPhone: ${values.phone}\nService: ${values.service}\nMessage: ${values.message}\n\nFrom: ${sourcePage || 'Website Contact Form'}`;
+    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(messageText)}`;
+
+    window.open(whatsappUrl, '_blank');
+
     setTimeout(() => {
       setIsSubmitting(false);
       toast({
-        title: "Message Sent Successfully",
-        description: "One of our consultants will contact you within 24 hours.",
+        title: "WhatsApp Redirect Started",
+        description: "Your message is pre-filled in WhatsApp. Please send it from the WhatsApp window.",
         action: <CheckCircle2 className="w-5 h-5 text-green-500" />,
       });
       form.reset();
-    }, 1500);
+    }, 500);
   }
 
   return (
@@ -97,28 +112,49 @@ export default function Contact() {
                 />
                 
                 <div className="space-y-8 mt-12">
-                  <ContactMethod 
-                    icon={<MapPin />}
-                    title="Corporate Office"
-                    detail="123 Corporate Tower, Financial District, Global City, 10001"
-                  />
-                  <ContactMethod 
-                    icon={<Phone />}
-                    title="Phone / WhatsApp"
-                    detail="+1 (234) 567-890"
-                    action="tel:+1234567890"
-                  />
-                  <ContactMethod 
-                    icon={<Mail />}
-                    title="Email Address"
-                    detail="contact@globeextent.com"
-                    action="mailto:contact@globeextent.com"
-                  />
-                  <ContactMethod 
-                    icon={<Clock />}
-                    title="Business Hours"
-                    detail="Mon - Fri: 9:00 AM - 6:00 PM (GMT)"
-                  />
+                  {isEventInquiry ? (
+                    <>
+                      <ContactMethod 
+                        icon={<Phone />}
+                        title="Event Management Hotline"
+                        detail={EVENT_PHONE}
+                        action={EVENT_PHONE_DIAL}
+                      />
+                      <ContactMethod 
+                        icon={<Clock />}
+                        title="Business Hours"
+                        detail="Mon - Fri: 9:00 AM - 6:00 PM (GMT)"
+                      />
+                      <p className="text-muted-foreground font-sans text-sm">
+                        Call only. Please use the event hotline above for event management inquiries.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <ContactMethod 
+                        icon={<MapPin />}
+                        title="Corporate Office"
+                        detail="2nd Floor, Metro Tower, Kaikamba, Uppala - 671 322"
+                      />
+                      <ContactMethod 
+                        icon={<Phone />}
+                        title="Phone / WhatsApp"
+                        detail={`${OFFICE_PHONE} • ${OFFICE_PHONE_SECONDARY} • ${OFFICE_PHONE_THIRD}`}
+                        action={OFFICE_PHONE_DIAL}
+                      />
+                      <ContactMethod 
+                        icon={<Mail />}
+                        title="Email Address"
+                        detail={OFFICE_EMAIL}
+                        action={`mailto:${OFFICE_EMAIL}`}
+                      />
+                      <ContactMethod 
+                        icon={<Clock />}
+                        title="Business Hours"
+                        detail="Mon - Fri: 9:00 AM - 6:00 PM (GMT)"
+                      />
+                    </>
+                  )}
                 </div>
               </AnimatedSection>
             </div>

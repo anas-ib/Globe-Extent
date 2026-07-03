@@ -13,27 +13,17 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 11.9.0
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: pnpm
-
-      - name: Verify Environment
-        run: |
-          node --version
-          pnpm --version
+          cache: npm
 
       - name: Install Dependencies
-        run: pnpm install --frozen-lockfile --config.allow-build=esbuild
+        run: npm ci
 
       - name: Type Check
-        run: pnpm run typecheck
+        run: npm run typecheck
 
       - name: Build Project
-        run: pnpm run build
+        run: npm run build

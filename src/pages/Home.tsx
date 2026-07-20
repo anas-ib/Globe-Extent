@@ -9,8 +9,7 @@ import { CTASection } from '@/components/shared/CTASection';
 import { GlobeLogo } from '@/components/shared/GlobeLogo';
 import { BrandLockup } from '@/components/shared/BrandLockup';
 
-import bgImage from '@assets/generated_images/home-hero-bg.jpg';
-import towerImage from '@assets/generated_images/corporate-tower.jpg';
+const towerImage = '/attached_assets/generated_images/corporate-tower.jpg';
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -40,23 +39,20 @@ export default function Home() {
       <section
         ref={containerRef}
         onMouseMove={handleMouseMove}
-        className="relative h-screen flex items-center justify-center overflow-hidden bg-primary pt-20"
+        className="relative h-screen flex items-center justify-center overflow-hidden bg-slate-800 pt-20"
       >
-        {/* Background Image & Overlay */}
+        {/* Clean gradient background */}
         <motion.div
           style={{ y, opacity }}
           className="absolute inset-0 z-0"
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay"
-            style={{ backgroundImage: `url(${bgImage})` }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/50 to-primary" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-800 via-slate-900 to-slate-950" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(251,191,36,0.12),transparent_28%)]" />
         </motion.div>
 
         {/* Interactive Cursor Glow */}
         <div
-          className="pointer-events-none absolute z-0 w-[600px] h-[600px] bg-accent/20 rounded-full blur-[120px] transition-transform duration-700 ease-out hidden lg:block"
+          className="pointer-events-none absolute z-0 w-[600px] h-[600px] bg-blue-400/20 rounded-full blur-[120px] transition-transform duration-700 ease-out hidden lg:block"
           style={{
             transform: `translate(${mousePos.x - 300}px, ${mousePos.y - 300}px)`
           }}
@@ -70,14 +66,14 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex items-center justify-center gap-4 md:gap-5 mb-8"
+            className="relative flex items-center justify-center mb-8"
           >
-            {/* Globe shrinks on mobile so the lockup fits on one row */}
-            <GlobeLogo size={52} className="md:hidden shrink-0 drop-shadow-[0_0_14px_rgba(201,168,76,0.5)]" />
-            <GlobeLogo size={72} className="hidden md:block shrink-0 drop-shadow-[0_0_18px_rgba(201,168,76,0.5)]" />
-            {/* md size on mobile, lg on md+ */}
-            <span className="md:hidden"><BrandLockup size="md" /></span>
-            <span className="hidden md:block"><BrandLockup size="lg" /></span>
+            <div className="relative flex items-center justify-center">
+              <div className="pointer-events-none absolute inset-0 mx-auto h-72 w-72 md:h-80 md:w-80 rounded-full bg-blue-400/20 blur-[140px]" />
+              <div className="pointer-events-none absolute inset-0 mx-auto h-48 w-48 md:h-56 md:w-56 rounded-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.45),rgba(59,130,246,0.16)_38%,transparent_60%)] blur-3xl" />
+              <GlobeLogo size={120} className="md:hidden relative shrink-0 drop-shadow-[0_0_26px_rgba(59,130,246,0.45)]" />
+              <GlobeLogo size={160} className="hidden md:block relative shrink-0 drop-shadow-[0_0_36px_rgba(59,130,246,0.44)]" />
+            </div>
           </motion.div>
 
           <motion.div

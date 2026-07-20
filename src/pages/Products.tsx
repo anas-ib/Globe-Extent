@@ -6,7 +6,7 @@ import { AnimatedSection } from '@/components/shared/AnimatedSection';
 import { SectionHeading } from '@/components/shared/SectionHeading';
 import { CTASection } from '@/components/shared/CTASection';
 
-import bgImage from '@assets/generated_images/products-bg.jpg';
+const bgImage = '/attached_assets/generated_images/products-bg.jpg';
 import { Link } from 'react-router-dom';
 
 const BREADCRUMBS = [

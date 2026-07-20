@@ -10,7 +10,7 @@ import { SectionHeading } from '@/components/shared/SectionHeading';
 import { ServiceCard } from '@/components/shared/ServiceCard';
 import { CTASection } from '@/components/shared/CTASection';
 
-import bgImage from '@assets/generated_images/software-bg.jpg';
+const bgImage = '/attached_assets/generated_images/software-bg.jpg';
 
 const BREADCRUMBS = [
   { label: 'Home', path: '/' },

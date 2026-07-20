@@ -63,7 +63,7 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-accent shrink-0 mt-1" />
                 <div className="space-y-2">
                   <a href="tel:+916360235580" className="hover:text-accent transition-colors block">+91 63602 35580</a>
-                  <a href="tel:+91994691979" className="hover:text-accent transition-colors block">+91 99469 1979</a>
+                  <a href="tel:+919946691979" className="hover:text-accent transition-colors block">+91 99466 91979</a>
                   <a href="tel:+917829024003" className="hover:text-accent transition-colors block">+91 78290 24003</a>
                 </div>
               </li>
